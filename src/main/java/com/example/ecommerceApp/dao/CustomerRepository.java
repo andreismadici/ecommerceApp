@@ -5,5 +5,5 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface CustomerRepository extends JpaRepository<Customer,  Long> {
 
-        Customer fingByEmail(String theEmail);
+        Customer findByEmail(String theEmail);
 }
